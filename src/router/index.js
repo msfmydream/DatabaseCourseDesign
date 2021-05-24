@@ -2,6 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import login from '../views/login'
 import index  from  '../views/index'
+import stockoverview from "../views/StockOverview";
+import SingalView from "../views/SingalView";
+import StockPut from "../views/StockPut";
+import StockOut from "../views/StockOut";
 
 Vue.use(VueRouter)
 
@@ -15,7 +19,26 @@ const routes = [
   {
     path: '/admin',
     name: 'index',
-    component: index
+    component: index,
+    children:[
+      {
+        path: "/stockoverview",
+        name:"库存总览",
+        component: stockoverview
+      },,{
+        path:"/singalview",
+        name: "SingalView",
+        component: SingalView
+      },{
+        path:"/stockput",
+        name: "StockPut",
+        component: StockPut
+      },{
+        path:"/stockout",
+        name: "StockOut",
+        component: StockOut
+      }
+    ]
   }
 ]
 

@@ -41,3 +41,36 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+  el-container{
+    height: 100vh;
+  }
+
+  .el-header {
+    background-color: #B3C0D1;
+    color: #333;
+    line-height: 60px;
+  }
+
+  .el-aside {
+    color: #333;
+    height: 100vh;
+
+  }
+
+  .el-main{
+    height: 100vh;
+  }
+
+  .el-footer{
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    background-color:#FAFAFAFA;
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+</style>

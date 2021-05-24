@@ -1,6 +1,6 @@
 <template>
-<!--    <div>-->
-        <el-row>
+
+        <el-row type="flex" class="row-bg" justify="center">
             <el-col :span="6">
                 <h2>配件库存管理系统</h2>
                 <el-image :src="require('@/assets/login.jpg')" style="height: 180px; width: 180px"></el-image>
@@ -25,14 +25,13 @@
 
 
                     <el-form-item>
-                        <el-button type="primary" @click="submitForm('ruleForm')">立即创建</el-button>
+                        <el-button type="primary" @click="submitForm('ruleForm')">登录</el-button>
                         <el-button @click="resetForm('ruleForm')">重置</el-button>
                     </el-form-item>
                 </el-form>
             </el-col>
         </el-row>
 
-<!--    </div>-->
 
 </template>
 
